@@ -9,9 +9,9 @@
       </div>
 
       <div class="rappelMenu">
-          <a href="./?action=accueil"><li>ACCUEIL</li></a>
-          <a href="./?action=accueil#propos"><li>A&nbsp;PROPOS</li></a>
-          <a href="./?action=accueil#tuto"><li>TUTO</li></a>
+          <li><a href="./?action=accueil">ACCUEIL</a></li>
+          <li><a href="./?action=accueil#propos">A&nbsp;PROPOS</a></li>
+          <li><a href="./?action=accueil#tuto">TUTO</a></li>
       </div>
     </footer>
 

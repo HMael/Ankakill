@@ -12,7 +12,7 @@
 
       <div class="rapelMenu">
         <ul>
-          <a href="./?action=accueil"><li>accueil</li></a>
+          <li><a href="./?action=accueil">accueil</a></li>
       <li><a href="./?action=profil">profil</a></li>
       <li><a href="./?action=declaration">déclaration du résultat</a></li>
       <li><a href="./?action=statistique">statistique</a></li>
