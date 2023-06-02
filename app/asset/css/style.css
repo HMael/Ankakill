@@ -1,0 +1,780 @@
+/* =====font=====*/
+/* iceberg-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Iceberg';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/iceberg-v20-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/iceberg-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/iceberg-v20-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/iceberg-v20-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/iceberg-v20-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/iceberg-v20-latin-regular.svg#Iceberg') format('svg');
+  /* Legacy iOS */
+}
+
+/* rocknroll-one-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'RocknRoll One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rocknroll-one-v10-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/rocknroll-one-v10-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/rocknroll-one-v10-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/rocknroll-one-v10-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/rocknroll-one-v10-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/rocknroll-one-v10-latin-regular.svg#RocknRollOne') format('svg');
+  /* Legacy iOS */
+}
+
+
+/* charm-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Charm';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/charm-v11-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/charm-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/charm-v11-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/charm-v11-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/charm-v11-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/charm-v11-latin-regular.svg#Charm') format('svg');
+  /* Legacy iOS */
+}
+
+/* =====finFont===== */
+
+/* =====reset===== */
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bleu: #14173E;
+  --orange: #FF833F;
+  --blanc-cassé: #fffeea;
+  --blanc: #fff;
+  --noir: #4c4c4c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+/* =====finReset===== */
+/* =====header===== */
+
+/* =====menuBurger===== */
+
+.menuB {
+  background-color: var(--bleu);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+  background-color: var(--bleu);
+  text-transform: uppercase;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  color: var(--orange);
+}
+
+.sidenav a:hover {
+  color: var(--blanc);
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav.active {
+  left: 0;
+}
+
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: var(--blanc);
+  margin: 6px 0;
+}
+
+/* =====finMenuBurger===== */
+
+li {
+  list-style-type: none;
+}
+
+.container li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  display: flex;
+  color: var(--bleu);
+}
+
+.container li:hover {
+  color: var(--orange);
+}
+
+a:hover {
+  color: var(--bleu);
+}
+
+.titrep {
+  justify-content: center;
+  display: flex;
+  width: auto;
+  font-size: 1.5em;
+  background-color: var(--bleu);
+}
+
+.titrep a:hover {
+  color: var(--blanc);
+}
+
+.cadre {
+  border-top: 3px solid var(--bleu);
+  border-bottom: 3px solid var(--bleu);
+  width: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--orange);
+  padding-top: 16px;
+}
+
+/* ====finHeader===== */
+
+/* =====IconeConnexion===== */
+.iconeUtilisateur img {
+  width: 50px;
+  height: 50px;
+  color: #14173E;
+}
+
+
+/* =====finIconeConnexion===== */
+/* =====login===== */
+
+.login {
+  display: flex;
+  width: 100px;
+}
+
+/* =====finLogin===== */
+
+/* =====tuto===== */
+
+.sectionTutos {
+  margin-top: 40px;
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+}
+
+.titreTuto {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--bleu);
+}
+
+.tuto {
+  max-width: 500px;
+}
+
+/* =====finTuto===== */
+
+/* =====Apropos===== */
+
+.sectionApropos {
+  margin-top: 40px;
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+}
+
+.titrePropos {
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--bleu);
+}
+
+.aPropos {
+  max-width: 500px;
+}
+
+/* =====finApropos===== */
+
+/* =====connexion/inscription===== */
+
+.connexion {
+  justify-content: center;
+  color: var(--bleu);
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formulaire {
+  justify-content: center;
+  display: flex;
+  color: var(--bleu);
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulaire input[type="text"],
+.formulaire input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.formulaire input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--bleu);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.formulaire input[type="submit"]:active {
+  background-color: var(--orange);
+}
+
+.inscription {
+  justify-content: center;
+  color: var(--bleu);
+  display: flex;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* =====finConnexion/inscription===== */
+
+/* =====profile===== */
+.titreProfile {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =====finProfile===== */
+
+/* =====declarationPartie===== */
+.titreAdversaire {
+  color: var(--bleu);
+  padding-left: 30px;
+}
+
+.validation {
+  padding-right: 30px;
+}
+
+
+.sections-wrapper {
+  justify-content: space-between;
+}
+
+.selectionClasse,
+.resultat {
+  flex-basis: 48%;
+}
+
+/* =====finDeclarationPartie===== */
+
+/* =====fieldset===== */
+
+fieldset {
+  border: none;
+  margin: 10px 0;
+}
+
+fieldset div {
+  margin-bottom: 10px;
+}
+
+fieldset label {
+  margin-left: 5px;
+}
+
+fieldset input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--bleu);
+  outline: none;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+
+fieldset input[type="radio"]:checked:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--bleu);
+}
+
+fieldset input[type="radio"]:hover {
+  border-color: var(--orange);
+}
+
+/* =====finFieldset===== */
+
+/* =====dropdown===== */
+.selected-content {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.bouton {
+  background-color: var(--bleu);
+  color: var(--orange);
+  padding: 16px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.container-drop {
+  display: none;
+  position: absolute;
+  right: 0px;
+  min-width: 124px;
+  max-height: 200px;
+  overflow: auto;
+  z-index: 1;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.container-drop::-webkit-scrollbar {
+  display: none;
+}
+
+.container-drop a {
+  text-decoration: none;
+  color: var(--orange);
+  background-color: var(--bleu);
+  padding: 15px 15px;
+  display: block;
+}
+
+.container-drop a:hover {
+  color: var(--blanc);
+}
+
+.dropdown:hover .container-drop {
+  display: block;
+}
+
+.dropdown:hover .bouton {
+  background-color: var(--bleu);
+  color: var(--blanc);
+}
+
+.selectionClasse {
+  padding-bottom: 100px;
+}
+
+/* =====finDropdown===== */
+
+/* =====winRate===== */
+.gagne{
+display: flex;
+}
+
+.perdu{
+display: flex;
+}
+
+.winRate{
+display: flex;
+}
+
+.cercleP,
+.cercleG,
+.cercleW{
+  border: 3px solid black;
+  border-radius: 30px;
+}
+
+/* =====finWinRate===== */
+
+/* =====CHU===== */
+.titreCgu {
+  font-size: 1.3rem;
+  text-align: center;
+  justify-content: center;
+  color: var(--bleu);
+  display: flex;
+}
+
+.article1,
+.article2,
+.article3,
+.article4,
+.article5,
+.article6,
+.article7,
+.article8,
+.article9,
+.article10,
+.article11 {
+
+  color: var(--bleu);
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =====CHU===== */
+
+/* =====footer===== */
+
+.container2 {
+  margin-top: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  width: auto;
+  background-color: var(--bleu);
+}
+
+.rapelMenu {
+  list-style-type: none;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 1.3em;
+  color: var(--blanc);
+}
+
+.rapelMenu a:hover {
+  color: var(--blanc);
+}
+
+.cgu {
+  justify-content: center;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: var(--blanc);
+}
+
+.cgu a:hover {
+  color: var(--blanc);
+}
+
+/* =====finFooter===== */
+
+
+
+
+/* =====media===== */
+
+@media screen and (max-width:1200px) {
+
+  .container {
+    max-width: 1155px;
+    margin-left: -17px;
+  }
+
+  .container2 {
+    width: 1200px;
+  }
+
+  .cgu,
+  .rapelMenu {
+    font-size: 1.3em;
+  }
+
+  .titrep {
+    width: 1200px;
+    font-size: 1.5em;
+  }
+
+  .menuB {
+    display: none;
+  }
+
+  .sectionTutos,
+  .sectionApropos {
+    width: 1200px;
+  }
+
+  .tuto,
+  .aPropos {
+    width: 600px;
+  }
+
+}
+
+@media screen and (max-width:720px) {
+
+  .container {
+    max-width: 670px;
+    margin-left: -17px;
+  }
+
+  .container2 {
+    width: 720px;
+  }
+
+  .cgu,
+  .rapelMenu {
+    font-size: 1.2em;
+  }
+
+  .titrep {
+    width: 720px;
+  }
+
+  .menuB {
+    display: none;
+  }
+
+  .sectionTutos,
+  .sectionApropos {
+    width: 720px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .container2 {
+    max-width: 600px;
+  }
+
+  .cadre {
+    display: none;
+  }
+
+  /* =====tuto===== */
+  .sectionTutos,
+  .tuto {
+    font-size: 0.95em;
+  }
+
+  .sectionTutos {
+    display: flex;
+    white-space: wrap;
+  }
+
+  .titreTuto {
+    font-size: 1.1em;
+  }
+
+  /* =====tuto===== */
+
+  /* =====propos===== */
+
+  .sectionApropos,
+  .aPropos {
+    font-size: 0.95em;
+  }
+
+  .sectionApropos,
+  .sectionTutos {
+    max-width: 600px;
+    
+
+  }
+
+
+  .sectionApropos {
+    display: flex;
+    white-space: wrap;
+  }
+
+  .titrep {
+    max-width: 600px;
+  }
+
+  .titrePropos {
+    font-size: 1.1em;
+  }
+
+  /* =====propos===== */
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .bordure {
+    max-width: 720px;
+  }
+
+  .menuB {
+    display: block;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container2 {
+    max-width: 480px;
+  }
+
+  .cadre {
+    display: none;
+  }
+
+  /* =====tuto===== */
+  .sectionTutos,
+  .tuto {
+    font-size: 0.95em;
+  }
+
+  .sectionTutos {
+    display: flex;
+    white-space: wrap;
+  }
+
+  .titreTuto {
+    font-size: 1.1em;
+  }
+
+  /* =====tuto===== */
+
+  /* =====propos===== */
+
+  .sectionApropos,
+  .aPropos {
+    font-size: 0.95em;
+  }
+
+  .sectionApropos,
+  .sectionTutos {
+    max-width: 480px;
+
+  }
+
+
+  .sectionApropos {
+    display: flex;
+    white-space: wrap;
+  }
+
+  .titrep {
+    max-width: 480px;
+  }
+
+  .titrePropos {
+    font-size: 1.1em;
+  }
+
+  /* =====propos===== */
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .bordure {
+    max-width: 720px;
+  }
+
+  .menuB {
+    display: block;
+    width: 480px;
+  }
+
+  .container2 {
+    font-size: 0.8em;
+  }
+}
