@@ -489,7 +489,7 @@ display: flex;
 
 /* =====finWinRate===== */
 
-/* =====CHU===== */
+/* =====CGU===== */
 .titreCgu {
   font-size: 1.3rem;
   text-align: center;
@@ -523,7 +523,7 @@ p {
   align-items: center;
 }
 
-/* =====CHU===== */
+/* =====CGU===== */
 
 /* =====footer===== */
 
@@ -542,11 +542,6 @@ p {
   padding-bottom: 10px;
   padding-top: 10px;
   font-size: 1.3em;
-  color: var(--blanc);
-}
-
-.rapelMenu a:hover {
-  color: var(--blanc);
 }
 
 .cgu {
